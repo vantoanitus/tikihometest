@@ -24,7 +24,7 @@ class Product
           'product_name'  => 'Apple',
           'product_price' => '4.95'
        ),
-       "2" => array(
+      "2" => array(
           'product_id' 	=> '2',
           'product_name'  => 'Orange',
           'product_price' => '3.99'
@@ -34,8 +34,8 @@ class Product
     public function __construct($product)
     {
         $this->product_id    = $product["product_id"];
-	$this->product_name  = $product["product_name"];
-	$this->product_price = $product["product_price"];
+	      $this->product_name  = $product["product_name"];
+	      $this->product_price = $product["product_price"];
     }
 
     /**
@@ -45,15 +45,15 @@ class Product
      */
     public static function findById($id)
     {
-    	$product = self::$productDB[$id];
+    	  $product = self::$productDB[$id];
 
-    	if(isset($product))
-    	{
+    	  if(isset($product))
+    	  {
     		
-    		return new Product($product);
-    	}
+    		   return new Product($product);
+    	  }
 
-    	return new Product();
+    	  return new Product();
     }
 
     public function getProductId()
