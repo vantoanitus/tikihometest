@@ -34,8 +34,8 @@ class Product
     public function __construct($product)
     {
         $this->product_id    = $product["product_id"];
-		$this->product_name  = $product["product_name"];
-		$this->product_price = $product["product_price"];
+	$this->product_name  = $product["product_name"];
+	$this->product_price = $product["product_price"];
     }
 
     /**
