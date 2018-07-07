@@ -13,18 +13,18 @@ namespace Models;
 
 class User 
 {
-	protected $user_id;
-	protected $user_name;
-	protected $user_email;
+    protected $user_id;
+    protected $user_name;
+    protected $user_email;
 
-	public function __construct($name, $email)
+    public function __construct($name, $email)
     {
         $this->user_id    = 1; // This is dummy user_id 
 		$this->user_name  = $name;
 		$this->user_email = $email;
     }
 
-	public function getUserId()
+    public function getUserId()
     {
         return $this->user_id;
     }
