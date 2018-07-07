@@ -105,9 +105,9 @@ class ShoppingCart
       		
       	foreach ($this->list_product as $key => $product) 
       	{
-      	   $productInfo = Product::findById($product->product_id);	
+      	    $productInfo = Product::findById($product->product_id);	
             echo "#" . $key . " " . $productInfo->getProductName() . "(Quantity: " . $product->quantity . 
-                 	" ,Price: " . ($productInfo->getProductPrice() * $product->quantity) . "$)\n";
+                 " ,Price: " . ($productInfo->getProductPrice() * $product->quantity) . "$)\n";
         }
     }
 
