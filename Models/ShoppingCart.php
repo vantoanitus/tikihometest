@@ -48,12 +48,12 @@ class ShoppingCart
 	return true;
      }
 
-    /**
-     * Remove a product from list product of user
-     * @param string $id (product_id)
-     * @param quantity $quantity 
-     * @return void
-     */
+     /**
+      * Remove a product from list product of user
+      * @param string $id (product_id)
+      * @param quantity $quantity 
+      * @return void
+      */
      public function removeProduct($id, $quantity)
      {
 	if($quantity < 1)
@@ -71,10 +71,10 @@ class ShoppingCart
 	return false;
      }
 
-    /**
-     * Remove total price in shop cart of user
-     * @return float $totalPrice
-     */
+     /**
+      * Remove total price in shop cart of user
+      * @return float $totalPrice
+      */
      public function getTotalPrice()
      {
 	if(sizeof($this->list_product) == 0)
@@ -92,12 +92,12 @@ class ShoppingCart
         return $totalPrice;
      }
 
-    /**
-     * View all current product in list product
-     * @return void
-     */
-      public function viewShopCart()
-      {
+     /**
+      * View all current product in list product
+      * @return void
+      */
+     public function viewShopCart()
+     {
 	if(sizeof($this->list_product) == 0)
 	{
 		echo "Shop cart is empty!";
@@ -109,7 +109,7 @@ class ShoppingCart
            echo "#" . $key . " " . $productInfo->getProductName() . "(Quantity: " . $product->quantity . 
            	" ,Price: " . ($productInfo->getProductPrice() * $product->quantity) . "$)\n";
         }
-      }
+     }
 
 }
 
