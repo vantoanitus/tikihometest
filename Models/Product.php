@@ -13,22 +13,22 @@ namespace Models;
 
 class Product 
 {
-	protected $product_id;
-	protected $product_name;
-	protected $product_price;
+    protected $product_id;
+    protected $product_name;
+    protected $product_price;
 
-	/** This is database dummy for test */
-	protected static $productDB = array(
-        "1" => array(
-            'product_id' 	=> '1',
-            'product_name'  => 'Apple',
-            'product_price' => '4.95'
-        ),
-        "2" => array(
-            'product_id' 	=> '2',
-            'product_name'  => 'Orange',
-            'product_price' => '3.99'
-        )
+    /** This is database dummy for test */
+    protected static $productDB = array(
+      "1" => array(
+          'product_id' 	=> '1',
+          'product_name'  => 'Apple',
+          'product_price' => '4.95'
+       ),
+       "2" => array(
+          'product_id' 	=> '2',
+          'product_name'  => 'Orange',
+          'product_price' => '3.99'
+       )
     );
 
     public function __construct($product)
@@ -56,7 +56,7 @@ class Product
     	return new Product();
     }
 
-	public function getProductId()
+    public function getProductId()
     {
         return $this->product_id;
     }
